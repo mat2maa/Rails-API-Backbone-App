@@ -1,0 +1,83 @@
+<!--templates/register.jst.ejs-->
+
+<div class="row">
+  <div class="col-sm-4 col-sm-offset-4">
+    <!--type: "POST",-->
+    <!--url: "/api/v1/users",-->
+    <!--data: { email: "", password: "", password_confirmation: "", first_name: "", last_name: "", date_of_birth: "", avatar: "", contact: {}, social: {} }-->
+    <form role="form" class="form" action="/api/v1/accounts">
+      <div class="form-group">
+        <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First name">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Surname">
+      </div>
+      <div class="form-group">
+        <input type="date" class="form-control" id="date_of_birth" name="date_of_birth" placeholder="Date Of Birth">
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" id="email" name="email" placeholder="Email address">
+      </div>
+      <div class="form-group">
+        <div class="form-message" data-for="avatar"></div>
+        <p>
+          Avatar: <a href="#" id="avatar" class="file">Select image</a>
+          <input type="file" name="avatar" id="avatar_input" class="file-input" placeholder="Avatar" hidden>
+        </p>
+      </div>
+
+      <hr/>
+
+      <div class="form-group">
+        <input type="text" class="form-control" id="address_line_1" name="address_line_1" placeholder="Address Line 1">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="address_line_2" name="address_line_2" placeholder="Address Line 2">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="town" name="town" placeholder="town">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="postcode" name="postcode" placeholder="Postcode">
+      </div>
+      <div class="form-group">
+        <input type="tel" class="form-control" id="telephone_number" name="telephone_number" placeholder="Telephone Number">
+      </div>
+      <div class="form-group">
+        <input type="tel" class="form-control" id="mobile_number" name="mobile_number" placeholder="Mobile Number">
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" id="work_email" name="work_email" placeholder="Work Email">
+      </div>
+
+      <hr/>
+
+      <div class="form-group">
+        <input type="url" class="form-control" id="facebook" name="facebook" placeholder="Facebook">
+      </div>
+      <div class="form-group">
+        <input type="url" class="form-control" id="twitter" name="twitter" placeholder="Twitter">
+      </div>
+      <div class="form-group">
+        <input type="url" class="form-control" id="linkedin" name="linkedin" placeholder="LinkedIn">
+      </div>
+
+      <hr/>
+
+      <div class="form-group">
+        <input type="text" class="form-control" id="username" name="username" placeholder="Username">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" placeholder="Confirm password">
+      </div>
+      <button type="submit" class="btn btn-default full-width">Register</button>
+    </form>
+  </div>
+</div>
+

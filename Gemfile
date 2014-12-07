@@ -1,0 +1,35 @@
+source 'https://rubygems.org'
+
+ruby '2.1.5'
+gem 'rails', '4.1.8'
+gem 'rails-api'
+gem 'pg'
+gem 'unicorn'
+gem 'unicorn-rails'
+gem 'unicorn-worker-killer'
+gem 'bcrypt', :require => 'bcrypt'
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'sass-rails', '~> 4.0.3'
+gem 'autoprefixer-rails'
+gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails', '~> 4.0.0'
+gem 'fog'
+gem 'carrierwave'
+gem 'mini_magick', '~> 4.0.0.rc'
+gem 'backbone-on-rails'
+gem 'select2-rails'
+gem 'jquery-minicolors-rails'
+gem 'bootstrap-datepicker-rails', :require => 'bootstrap-datepicker-rails',
+    :git => 'git://github.com/Nerian/bootstrap-datepicker-rails.git'
+gem 'mailgun_rails'
+gem 'ransack'
+
+group :development do
+  gem 'habtm_generator'
+  gem 'better_errors'
+  gem 'binding_of_caller', :platforms => [:mri_19, :mri_20, :rbx]
+  gem 'quiet_assets'
+  gem 'awesome_print', :git => 'https://github.com/michaeldv/awesome_print', :branch => 'master'
+end

@@ -1,0 +1,25 @@
+<!--templates/login.jst.ejs-->
+
+<div class="row">
+  <div class="col-sm-4 col-sm-offset-4">
+    <!--type: "POST"-->
+    <!--url: "/api/v1/login"-->
+    <!--data: { username: "", password: "" }-->
+    <form role="form" class="form" action="/api/v1/login">
+      <div class="form-group">
+        <input type="text" class="form-control" id="username" name="username" placeholder="Username">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+      </div>
+      <div class="form-group">
+        <a href="#forgot-password">Oops, I've forgotten my password.</a>
+      </div>
+      <button type="submit" class="btn btn-default full-width">Log in</button>
+    </form>
+    <p>
+      Don't have an account? <a href="#register">Sign up here</a>
+    </p>
+  </div>
+</div>
+
